@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: rest-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/TrueClub
+    username: root
+    password: Kshitiz@123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+server:
+  port: 8081
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
